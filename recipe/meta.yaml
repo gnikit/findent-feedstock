@@ -8,6 +8,8 @@ package:
 source:
   url: https://downloads.sourceforge.net/project/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: c010ce4d020ec77c055e0dea1f29a2f52815cb4debe052fd559cf09049fac702
+  patches:
+    - man-page.patch  # [target_platform != build_platform]
 
 build:
   number: 0
@@ -18,8 +20,11 @@ requirements:
     - {{ compiler('cxx') }}
     - bison
     - flex
+    - libtool
+    - automake
     - autoconf
     - make
+    - perl
 
 test:
   commands:

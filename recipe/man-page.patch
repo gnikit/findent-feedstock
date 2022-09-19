@@ -1,0 +1,20 @@
+diff --git a/src/Makefile.am b/src/Makefile.am
+index 442ad50..041437a 100644
+--- a/src/Makefile.am
++++ b/src/Makefile.am
+@@ -94,15 +94,6 @@ CLEANFILES = findent findent.exe findent.1 \
+ 
+ MAINTAINERCLEANFILES = builtparser.cpp builtparser.hpp builtlexer.cpp
+ 
+-if MAKEMAN
+-
+-man1_MANS = findent.1
+-
+-findent.1: findent
+-	: | ./findent -H > $@
+-
+-endif
+-
+ findent.$(OBJEXT): parser.hpp
+ 
+ vim_plugin.$(OBJEXT): vim_fortran.inc vim_findent.inc vim_help.inc
