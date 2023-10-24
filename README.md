@@ -1,11 +1,11 @@
-About findent
-=============
+About findent-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/findent-feedstock/blob/main/LICENSE.txt)
 
 Home: https://sourceforge.net/projects/findent/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/findent-feedstock/blob/main/LICENSE.txt)
 
 Summary: Indents/beautifies/converts Fortran sources.
 
