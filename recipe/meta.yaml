@@ -1,5 +1,5 @@
 {% set name = "findent" %}
-{% set version = "4.2.1" %}
+{% set version = "4.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://downloads.sourceforge.net/project/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c010ce4d020ec77c055e0dea1f29a2f52815cb4debe052fd559cf09049fac702
+  sha256: 62144eb84bda93d21241a6963ef973f92778bca7c915bfea9b38973774e85c7e
 
 build:
   number: 0
@@ -18,8 +18,11 @@ requirements:
     - {{ compiler('cxx') }}
     - bison
     - flex
+    - libtool
+    - automake
     - autoconf
     - make
+    - perl
 
 test:
   commands:

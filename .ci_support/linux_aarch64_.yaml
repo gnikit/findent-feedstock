@@ -11,8 +11,10 @@ channel_targets:
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '10'
+- '12'
 docker_image:
 - quay.io/condaforge/linux-anvil-aarch64
+perl:
+- 5.32.1
 target_platform:
 - linux-aarch64
